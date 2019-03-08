@@ -1,0 +1,54 @@
+{
+	"food": {
+		"sap.card": {
+			"type": "Analytical",
+			"header": {
+				"title": "Food Management"
+			},
+			"content": {
+				"chartType": "Column",
+				"legend": {
+					"visible": true,
+					"position": "Bottom",
+					"alignment": "Left"
+				},
+				"plotArea": {
+					"dataLabel": {
+						"visible": true
+					},
+					"categoryAxisText": {
+						"visible": false
+					},
+					"valueAxisText": {
+						"visible": false
+					}
+				},
+				"title": {
+					"text": "Bowl management",
+					"visible": false,
+					"alignment": "Left"
+				},
+				"measureAxis": "valueAxis",
+				"dimensionAxis": "categoryAxis",
+				"data": {
+					"request": {
+						"url": "https://kitty-care-system.herokuapp.com/get_all_devices?type=1"
+					},
+					"path": "/Devices"
+				},
+				"dimensions": [
+					{
+						"label": "Bowls",
+						"value": "{Label}"
+					}
+				],
+				"measures": [
+					{
+						"label": "Amount (mg)",
+						"value": "{Amount}"
+					}
+				]
+			}
+		}
+	}
+}
