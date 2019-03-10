@@ -1,48 +1,174 @@
 {
-	"food": {
-		"sap.card": {
-			"type": "Analytical",
-			"header": {
-				"title": "Food Management"
-			},
-			"content": {
-				"chartType": "Column",
-				"legend": {
-					"visible": true,
-					"position": "Bottom",
-					"alignment": "Left"
-				},
-				"plotArea": {
-					"dataLabel": {
-						"visible": true
-					},
-					"categoryAxisText": {
-						"visible": false
-					},
-					"valueAxisText": {
-						"visible": false
-					}
-				},
-				"title": {
-					"text": "Bowl management",
-					"visible": false,
-					"alignment": "Left"
-				},
-				"measureAxis": "valueAxis",
-				"dimensionAxis": "categoryAxis",
-				"dimensions": [
-					{
-						"label": "Bowls",
-						"value": "{Label}"
-					}
-				],
-				"measures": [
-					{
-						"label": "Amount (mg)",
-						"value": "{Amount}"
-					}
-				]
-			}
-		}
-	}
+  "ListDefaultHeader": {
+    "sap.card": {
+      "type": "List",
+      "header": {
+        "title": "Title",
+        "subTitle": "Subtitle",
+        "icon": {
+          "src": "sap-icon://accept",
+          "alt": "AltIcon",
+          "shape": "Circle",
+          "text": "IconText",
+          "backgroundColor": "green",
+          "color": "#fff"
+        },
+        "status": {
+          "text": "Status"
+        }
+      },
+      "content": {
+        "data": {
+          "json": [
+              {
+                "title": "Item1 Title",
+                "description": "Item1 Description",
+                "info": "Item1 Info",
+                "state": "Error"
+              },
+              {
+                "title": "Item2 Title",
+                "description": "Item2 Description",
+                "info": "Item2 Info",
+                "state": "Warning"
+              },
+              {
+                "title": "Item3 Title",
+                "description": "Item3 Description",
+                "info": "Item3 Info",
+                "state": "Success"
+              }
+            ]
+        },
+        "item": {
+          "title": {
+            "label": "TitleLabel",
+            "value": "{title}"
+          },
+          "description": {
+            "label": "DescLabel",
+            "value": "{description}"
+          },
+          "info": {
+            "label": "InfoLabel",
+            "value": "{info}",
+            "state": "{state}"
+          },
+          "highlight": "{state}", 
+          "icon": {
+            "src": "sap-icon://action",
+            "alt": "AltIcon",
+            "shape": "Circle", 
+            "text": "IconText",
+            "backgroundColor": "green",
+            "color": "#fff"
+          }
+        }
+      }
+    }
+  },
+  "ListNumericHeader": {
+    "sap.card": {
+      "type": "List",
+      "header": {
+        "title": "Title",
+        "subTitle": "Subtitle",
+        "type": "Numeric",
+        "unitOfMeasurement": "g",
+        "mainIndicator": {
+          "number": "100",
+          "trend": "Down",
+          "state": "Critical"
+        },
+        "details": "Details",
+        "sideIndicators": [
+          {
+            "title": "SideIndicator1",
+            "number": "200",
+            "unit": "mg"
+          },
+          {
+            "title": "SideIndicator2",
+            "number": "400",
+            "unit": "mg"
+          }
+        ]
+      }
+    }
+  },
+  "AnalyticalCard": {
+    "sap.card": {
+      "type": "Analytical",
+      "header": {
+        "title": "Title",
+        "subTitle": "Subtitle",
+        "icon": {
+          "src": "sap-icon://accept",
+          "alt": "AltIcon",
+          "shape": "Circle",
+          "text": "IconText",
+          "backgroundColor": "green",
+          "color": "#fff"
+        },
+        "status": {
+          "text": "Status"
+        }
+      },
+      "content": {
+        "data": {
+          "json": [
+              {
+                "Dimension": "Dimension1",
+                "Measure": 1
+              },
+              {
+                "Dimension": "Dimension2",
+                "Measure": 2
+              },
+              {
+                "Dimension": "Dimension3",
+                "Measure": 3
+              }
+            ]
+        },
+        "chartType": "Line",
+        "legend": {
+          "visible": true,
+          "position": "Top",
+          "alignment": "Center"
+        },
+        "plotArea": {
+          "dataLabel": {
+            "visible": true,
+            "showTotal": true
+          },
+          "categoryAxisText": {
+            "visible": true
+          },
+          "valueAxisText": {
+            "visible": true
+          }
+        },
+        "title": {
+          "visible": true,
+          "text": "Chart title",
+          "alignment": "Left"
+        },
+        "measureAxis": "valueAxis",
+        "dimensionAxis": "categoryAxis",
+        "dimensions": [
+          {
+            "label": "Dimension1",
+            "value": "{Dimension}"
+          }
+        ],
+        "measures": [
+          {
+            "label": "Measure1",
+            "value": "{Measure}"
+          }
+        ]
+      }
+    }
+  }
 }

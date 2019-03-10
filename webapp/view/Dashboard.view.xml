@@ -11,11 +11,24 @@
 							title="{i18n>pageTitle}">
 					<content>
 						<f:CardContainer>
-							<w:Card height="23rem" manifest="{manifests>/food}">
+							<w:Card height="23rem" manifest="{manifests>/ListDefaultHeader}">
 								<w:layoutData>
 										<f:CardItemLayoutData columns="6" />
 								</w:layoutData>
 							</w:Card>
+
+							<w:Card height="23rem" manifest="{manifests>/ListNumericHeader}">
+							<w:layoutData>
+										<f:CardItemLayoutData columns="6" />
+								</w:layoutData>
+							</w:Card>
+
+							<w:Card height="23rem" manifest="{manifests>/AnalyticalCard}">
+							<w:layoutData>
+										<f:CardItemLayoutData columns="6" />
+								</w:layoutData>
+							</w:Card>
+						
 						</f:CardContainer>
 					</content>
 				</Page>
