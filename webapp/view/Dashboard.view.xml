@@ -10,6 +10,13 @@
 				<Page id="page" 
 							title="{i18n>pageTitle}">
 					<content>
+						<f:CardContainer>
+							<w:Card height="23rem" manifest="{manifests>/food}">
+								<w:layoutData>
+										<f:CardItemLayoutData columns="6" />
+								</w:layoutData>
+							</w:Card>
+						</f:CardContainer>
 					</content>
 				</Page>
 			</pages>

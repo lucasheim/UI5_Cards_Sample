@@ -30,12 +30,6 @@
 				},
 				"measureAxis": "valueAxis",
 				"dimensionAxis": "categoryAxis",
-				"data": {
-					"request": {
-						"url": "https://kitty-care-system.herokuapp.com/get_all_devices?type=1"
-					},
-					"path": "/Devices"
-				},
 				"dimensions": [
 					{
 						"label": "Bowls",

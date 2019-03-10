@@ -1,1 +1,1 @@
-# kittycare-foodmanager
+# UI5 Cards Sample
