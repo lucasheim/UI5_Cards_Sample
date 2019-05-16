@@ -1,5 +1,8 @@
 {
   "ListDefaultHeader": {
+        "sap.app": {
+      "type": "card"
+    },
     "sap.card": {
       "type": "List",
       "header": {
@@ -68,6 +71,9 @@
     }
   },
   "ListNumericHeader": {
+        "sap.app": {
+      "type": "card"
+    },
     "sap.card": {
       "type": "List",
       "header": {
@@ -97,6 +103,9 @@
     }
   },
   "AnalyticalCard": {
+        "sap.app": {
+      "type": "card"
+    },
     "sap.card": {
       "type": "Analytical",
       "header": {
